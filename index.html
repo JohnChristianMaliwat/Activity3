@@ -3,15 +3,39 @@
 <head>
     <title>Buttons</title>
 
+    <style>
+    #divContainer {
+        text-align: center;
+
+    }
+    .redText {
+        color: rgb(167, 224, 113);
+        background-color: rgb(216, 107, 107);
+        }
+
+        #redText:hover {
+            color: rgb(121, 80, 19);
+        }
+        #btnLogin {
+            font-size: large;
+            color: blueviolet;  
+            cursor: pointer;
+        }
+        #btnLogin:hover {
+            cursor: pointer;
+            font-size: x-large;
+            color: rgb(243, 159, 4);
+        }
     
+    </style>
 </head>
 
 <body>
-    <div style="text-align: center;">
+    <div style="text-align: center;" id="divContainer">
      <h1>Login</h1>
-    <input type="text" placeholder="txtUsername" onchan="alert(this.value)" value="Sample Value">
-    <input type="text" placeholder="txtPassword">
-    <div style="margin-top: 1rem;">
+    <input type="text" placeholder="txtUsername" onchan="alert(this.value)" value="Sample Value" class="redText">
+    <input type="text" placeholder="txtPassword" class="redText">
+    <div style="margin-top: 1rem;"  class="btnLogin" >
         <button id="btnLogin" onclick="alert('Login successfully.')">Login</button>
     </div>
 </div>
@@ -24,7 +48,7 @@
     buttonLogin.onclick = function() {
         alert("Login succesfully.")
     };
-</script>
+</script> 
 
 
 </html>
